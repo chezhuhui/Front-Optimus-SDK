@@ -149,6 +149,14 @@ const Optimus = {
    */
   closePopWebView: (params) => {
     return invokeDsBridge('closePopWebView', params)
+  },
+  /**
+   * 滑块校验
+   * @param params
+   * @return {Promise<any>}
+   */
+  sliderAuth: (params) => {
+    return invokeDsBridge('slideAuth', params)
   }
 }
 
