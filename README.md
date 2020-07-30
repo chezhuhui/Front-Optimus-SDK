@@ -1,4 +1,4 @@
-# Optimus-sdk2
+# front-optimus-sdk
 
 ## install
 ```bash
