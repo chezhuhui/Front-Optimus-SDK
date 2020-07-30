@@ -1,5 +1,5 @@
 {
-  "name": "optimus-sdk2",
+  "name": "front-optimus-sdk",
   "version": "1.0.0",
   "description": "Produce universal library with webpack and es6",
   "main": "lib/optimus-sdk.js",

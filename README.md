@@ -1,16 +1,16 @@
-# Optimus-sdk
+# Optimus-sdk2
 
 ## install
 ```bash
-npm i optimus-sdk
+npm i front-optimus-sdk
 or
-yarn add optimus-sdk
+yarn add front-optimus-sdk
 
 ```
 
 ## use
 ```js
-import optimus from 'optimus-sdk'
+import optimus from 'front-optimus-sdk'
 Vue.use(optimus)
 ```
 
