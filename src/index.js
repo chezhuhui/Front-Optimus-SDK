@@ -156,7 +156,7 @@ const Optimus = {
    * @return {Promise<any>}
    */
   sliderAuth: (params) => {
-    return invokeDsBridge('slideAuth', params)
+    return invokeDsBridge('sliderAuth', params)
   }
 }
 
