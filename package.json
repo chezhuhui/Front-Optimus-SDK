@@ -1,8 +1,8 @@
 {
-  "name": "front-optimus-sdk",
+  "name": "optimus-sdk-js",
   "version": "1.0.0",
   "description": "Produce universal library with webpack and es6",
-  "main": "lib/optimus-sdk.js",
+  "main": "lib/optimus-sdk-js.js",
   "scripts": {
     "release": "bash release.sh",
     "build": "webpack --env dev && webpack --env build",
@@ -10,7 +10,7 @@
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
-    "repl": "node -i -e \"$(< ./lib/optimus-sdk.js)\""
+    "repl": "node -i -e \"$(< ./lib/optimus-sdk-js.js)\""
   },
   "repository": {
     "type": "git",
