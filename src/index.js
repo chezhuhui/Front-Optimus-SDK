@@ -157,6 +157,20 @@ const Optimus = {
    */
   sliderAuth: (params) => {
     return invokeDsBridge('sliderAuth', params)
+  },
+  /**
+   * 系统设置
+   * @return {Promise<any>}
+   */
+  gotoAppSystemSetting: () => {
+    return invokeDsBridge('gotoAppSystemSetting')
+  },
+  /**
+   * 获取通知权限
+   * @return {Promise<any>}
+   */
+  getNotificationPermission: () => {
+    return invokeDsBridge('getNotificationPermission')
   }
 }
 
