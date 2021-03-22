@@ -171,6 +171,14 @@ const Optimus = {
    */
   getNotificationPermission: () => {
     return invokeDsBridge('getNotificationPermission')
+  },
+  /**
+   * 唤起小程序
+   * v>=2.6.3
+   * @return {Promise<any>}
+   */
+  evokeWxMiniProgram: () => {
+    return invokeDsBridge('evokeWxMiniProgram')
   }
 }
 
