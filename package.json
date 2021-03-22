@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chezhuhui/Front-Optimus-SDK.git"
+    "url": "git+https://github.com/chezhuhui/Front-Optimus-SDK.git"
   },
   "keywords": [
     "webpack",
@@ -64,5 +64,9 @@
   },
   "dependencies": {
     "dsbridge": "^3.1.4"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
