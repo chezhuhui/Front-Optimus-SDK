@@ -177,8 +177,8 @@ const Optimus = {
    * v>=2.6.3
    * @return {Promise<any>}
    */
-  evokeWxMiniProgram: () => {
-    return invokeDsBridge('evokeWxMiniProgram')
+  evokeWxMiniProgram: (params) => {
+    return invokeDsBridge('evokeWxMiniProgram', params)
   }
 }
 
