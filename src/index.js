@@ -179,6 +179,14 @@ const Optimus = {
    */
   evokeWxMiniProgram: (params) => {
     return invokeDsBridge('evokeWxMiniProgram', params)
+  },
+  /**
+   * 快速充值
+   * v>=2.7.0
+   * @return {Promise<any>}
+   */
+  getPhoneRechargeParamAct: (params) => {
+    return invokeDsBridge('getPhoneRechargeParamAct', params)
   }
 }
 
