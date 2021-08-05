@@ -187,6 +187,58 @@ const Optimus = {
    */
   getPhoneRechargeParamAct: (params) => {
     return invokeDsBridge('getPhoneRechargeParamAct', params)
+  },
+  /**
+   * 唤起 扫描二维码
+   * 商家app v>1.0.0
+   * @param {
+   * tip: "xxxx", 提示文字: 一行，注意字数
+   * flashType: "0", 闪光灯类型:  0.关闭(默认)    1.Auto自动  2.Manual手动(出现按钮)
+   * canLibrary: "0",  是否可以从相册选择:  0.不可以(默认)   1.可以相册选择
+   * isShowSearchResult: "0",  是否原生调用 二维码结果 接口并跳转结果:   0: 直接返回扫描结果(默认)  1:调用后端接口，并跳转到相应的界面
+   * }
+   * @return {Promise<any>}
+   */
+  evokeQRCodeScan: (params) => {
+    return invokeDsBridge('evokeQRCodeScan', params)
+  },
+  /**
+   * 唤起 相机/相册权限
+   * 商家app v>1.0.0
+   * @param {
+   * path: "可选, 当前路径",
+   * type: 0  0.相机  1.相册  2.相机+相册  必选
+   * }
+   * @return {Promise<any>}
+   */
+  evokeCameraAndLibrary: (params) => {
+    return invokeDsBridge('evokeCameraAndLibrary', params)
+  },
+  /**
+   * 从app本地缓存取数据
+   * 商家app v>1.0.0
+   * @param {
+   * key: "缓存的关键字",
+   * isAsync: "0", 0.同步缓存(默认) 1. 异步缓存
+   * }
+   * @return {Promise<any>}
+   */
+  getObjectFromLocalCache: (params) => {
+    return invokeDsBridge('getObjectFromLocalCache', params)
+  },
+  /**
+   * 缓存数据到app本地
+   * 商家app v>1.0.0
+   * @param {
+   * data: "要缓存的数据", 数组、字符串、字典
+   * key: "缓存的关键字",
+   * isAsync: "0", 0.同步缓存(默认)  1. 异步缓存
+   * isUserCache: "0",  0.基础缓存  1.用户缓存   用户缓存会在退出登录后清理，基础缓存不会
+   * }
+   * @return {Promise<any>}
+   */
+  saveObjectTolocalCache: (params) => {
+    return invokeDsBridge('saveObjectTolocalCache', params)
   }
 }
 
