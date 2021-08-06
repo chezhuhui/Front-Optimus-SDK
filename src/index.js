@@ -239,6 +239,41 @@ const Optimus = {
    */
   saveObjectTolocalCache: (params) => {
     return invokeDsBridge('saveObjectTolocalCache', params)
+  },
+  /**
+   * 新增监听
+   * 商家app v>1.0.0
+   * @param {
+   * action: "监听名key"
+   * }
+   * @return {Promise<any>}
+   */
+  addNativeListener: (params) => {
+    return invokeDsBridge('addNativeListener', params)
+  },
+  /**
+   * 移除监听
+   * 商家app v>1.0.0
+   * @param {
+    * action: "监听名key"
+    * }
+    * @return {Promise<any>}
+    */
+  removeNativeListener: (params) => {
+    return invokeDsBridge('removeNativeListener', params)
+  },
+  /**
+   * 给监听key发送数据
+   * 可以在addNativeListener的回调中监听到传值
+   * 商家app v>1.0.0
+   * @param {
+   * action: "监听名key",
+   * value: "监听到的值 value"
+   * }
+   * @return {Promise<any>}
+   */
+  sendMessageNativeToListener: (params) => {
+    return invokeDsBridge('sendMessageNativeToListener', params)
   }
 }
 
