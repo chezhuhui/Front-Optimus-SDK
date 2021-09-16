@@ -274,6 +274,35 @@ const Optimus = {
    */
   sendMessageNativeToListener: (params) => {
     return invokeDsBridge('sendMessageNativeToListener', params)
+  },
+  /**
+   * 保存图片到本地相册
+   * 商家app v>1.0.1
+   * @param {
+   * type: '1', 1. 传图片url(默认)   2.传图片流
+   * image: '',  图片的内容，不可为空，否则会返回错误
+   * fileName: '', 图片文件夹名字(默认空)， 为空的时候，不会新建一个图片文件夹
+   * isToast: '1', 1. App提示保存成功(默认)  0.App不提示
+   * }
+   * @return {Promise<any>}
+   */
+  saveImageToLibrary: (params) => {
+    return invokeDsBridge('saveImageToLibrary', params)
+  },
+  /**
+   * 下载/保存文件到本地磁盘
+   * 商家app v>1.0.1
+   * @param {
+   * type: '1', 1. 下载的url(默认)    2.文件流
+   * downloadUrl: '', 文件url， type = 1 时必填，否则会返回错误
+   * fileData: '', 文件流， type = 2 时必填
+   * fileName: '', 文件名字，type=1选填 为空的时候，会使用接口的名字, type=2必填
+   * fileType: '', 文件类型，选填  如果fileName用文件类型，这个参数不生效
+   * }
+   * @return {Promise<any>}
+   */
+  downloadFilesToDisk: (params) => {
+    return invokeDsBridge('downloadFilesToDisk', params)
   }
 }
 
