@@ -303,6 +303,15 @@ const Optimus = {
    */
   downloadFilesToDisk: (params) => {
     return invokeDsBridge('downloadFilesToDisk', params)
+  },
+  /**
+   * 获取应用基础信息
+   * 车主惠app v>2.7.2
+   * @param params
+   * @return {Promise<any>}
+   */
+  getApplicationInfo: (params) => {
+    return invokeDsBridge('getApplicationInfo', params)
   }
 }
 
