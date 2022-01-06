@@ -312,6 +312,15 @@ const Optimus = {
    */
   getApplicationInfo: (params) => {
     return invokeDsBridge('getApplicationInfo', params)
+  },
+  /**
+   * 唤起原生浏览器
+   * 车主惠app v>2.7.4
+   * @param params
+   * @return {Promise<any>}
+   */
+  evokeNativeBrowser: (params) => {
+    return invokeDsBridge('evokeNativeBrowser', params)
   }
 }
 
