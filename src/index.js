@@ -173,12 +173,19 @@ const Optimus = {
     return invokeDsBridge('getNotificationPermission')
   },
   /**
-   * 唤起小程序
+   * 唤起微信小程序
    * v>=2.6.3
    * @return {Promise<any>}
    */
   evokeWxMiniProgram: (params) => {
     return invokeDsBridge('evokeWxMiniProgram', params)
+  },
+  /**
+   * 唤起支付宝小程序
+   * @return {Promise<any>}
+   */
+  evokeAliPayMiniProgram: (params) => {
+    return invokeDsBridge('evokeAliPayMiniProgram', params)
   },
   /**
    * 快速充值
