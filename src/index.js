@@ -333,7 +333,12 @@ const Optimus = {
 
 const install = function (Vue, options) {
   if (install.installed) return
-  Vue.prototype.$op = Optimus
+  try {
+    Vue.prototype.$op = Optimus
+  } catch (error) {
+    // vue3
+    Vue.config.globalProerties.$op = Optimus
+  }
 }
 
 /* 支持使用标签的方式引入 */
