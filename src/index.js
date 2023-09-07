@@ -337,7 +337,7 @@ const install = function (Vue, options) {
     Vue.prototype.$op = Optimus
   } catch (error) {
     // vue3
-    Vue.config.globalProerties.$op = Optimus
+    Vue.config.globalProperties.$op = Optimus
   }
 }
 
