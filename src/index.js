@@ -328,6 +328,15 @@ const Optimus = {
    */
   evokeNativeBrowser: (params) => {
     return invokeDsBridge('evokeNativeBrowser', params)
+  },
+  /**
+   * 唤起企微客服
+   * 车主惠app v>3.0.1
+   * @param params
+   * @return {Promise<any>}
+   */
+  evokeWxCustomerService: (params) => {
+    return invokeDsBridge('evokeWxCustomerService', params)
   }
 }
 
